@@ -1,9 +1,11 @@
 import "./Albums.scss";
-import PhotoAlbums from "../../components/PhotoAlbums/PhotoAlbums";
+import PhotosItem from "../../components/Photos/PhotosItem";
+import Photos from "../../components/Photos/Photos";
 const Albums = () => {
   return (
     <div>
-       <PhotoAlbums/>
+       <PhotosItem/>
+       <Photos/>
     </div>
   )
 }
