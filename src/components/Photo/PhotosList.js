@@ -1,6 +1,6 @@
 import PhotoCard from "./PhotoCard";
-const PhotosItem = (props) => {
- const images = props.data.map((image) => (
+const PhotosList = (props) => {
+ const photos = props.result.map((image) => (
     <PhotoCard
       key={image.id}
       title={image.title}
@@ -15,11 +15,10 @@ const PhotosItem = (props) => {
         />
       }
     />
-  ));
+  ) );
 
 
-
-  return <div>{images}</div>;
+  return <div>{photos}</div>;
 };
 
-export default PhotosItem;
+export default PhotosList;
