@@ -4,9 +4,10 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="header">
-    <Navigation/>
+      <h2>Photo Gallery</h2>
+      <Navigation />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,28 +1,23 @@
 nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        max-width: 800px;
-        margin: auto;
-            
-            
-    
-       a{
-        margin:0 20px;
-        font-size: 24px;
-        text-decoration: none;
-        font-family: 'Playfair Display SC', serif;
-         flex-grow: 1;
-         text-align: center;
-         padding: 0.5em;
-         position: relative;
-         color: #4d4d4e;
-         display: block;
-      
-       }
-    
-      
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  max-width: 800px;
+  
+
+  a {
+    margin: 0 20px;
+    font-size: 24px;
+    text-decoration: none;
+    flex-grow: 1;
+    padding: 0.5em;
+    position: relative;
+    color: #79a97d;
+    display: block;
+  }
+  a:hover {
+    color: #A9BB8F;
+  }
 }

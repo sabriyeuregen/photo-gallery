@@ -1,4 +1,26 @@
-h1 {
-    color: black;
-    font-size: 30px;
+.home {
+
+
+    .home__img {
+        position: absolute;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 100%;//responsive 
+        height: auto;//responsive
+        transform: rotate(20deg);
+        width: 500px;
+        
+    }
+    .home__img-two {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 100%;//responsive 
+        height: auto;//responsive
+        width: 500px;
+        float: right;
+        transform: rotate(-10deg);
+    }
 }
+

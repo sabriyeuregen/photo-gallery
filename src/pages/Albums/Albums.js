@@ -1,29 +1,30 @@
 import "./Albums.scss";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import PhotosList from "../../components/Photo/PhotosList";
+
 const Albums = () => {
+  const [images, setImages] = useState([]);
 
-  const [images, setImages]= useState([])
+  const fetchPhotos = async () => {
+    const result = await fetch(
+      "https://jsonplaceholder.typicode.com/photos?_limit=12"
+    )
+      .then((response) => response.json())
+      .then((response) => response);
 
-  const fetchPhotos = async () =>{
+    setImages(result);
+    console.log(result);
+  };
 
-    const data = await axios(`https://jsonplaceholder.typicode.com/photos`).then(response => response.data)
-     
-    setImages(data)
-  
-  }
- 
-   useEffect(() => {
-     fetchPhotos()
-   },[])
+  useEffect(() => {
+    fetchPhotos();
+  }, []);
 
   return (
     <div>
-      <PhotosList data={images}/>
-  
+      <PhotosList result={images}></PhotosList>
     </div>
-  )
-}
+  );
+};
 
 export default Albums;
