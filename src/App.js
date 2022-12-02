@@ -15,13 +15,19 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route path="/home" element={<Home />} />
       <Route path="/photoalbum" element={<Albums />} />
-      <Route path="/favorite" element={<Favorite/>} />
+      <Route path="/favorite" element={<Favorite />} />
     </Route>
   )
 );
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="App">
+        <RouterProvider router={router}>
+          </RouterProvider> 
+          
+    </div>
+  );
 };
 
 export default App;

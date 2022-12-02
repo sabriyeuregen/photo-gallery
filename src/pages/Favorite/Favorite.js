@@ -1,7 +1,9 @@
-
+import FavoritesList from "../../components/FavoritesList/FavoritesList"
 const Favorite = () => {
   return (
-    <div>Favorite</div>
+    <div>
+      <FavoritesList/>
+    </div>
   )
 }
 

@@ -1,26 +1,26 @@
 .home {
-
+     width: 100%;
 
     .home__img {
-        position: absolute;
-        border: 1px solid #ddd;
-        border-radius: 4px;
+        margin-top: 50px;
+        //border: 1px solid #ddd;
+        border-radius: 10px;
         padding: 5px;
         max-width: 100%;//responsive 
         height: auto;//responsive
-        transform: rotate(20deg);
+        transform: rotate(10deg);
         width: 500px;
         
     }
     .home__img-two {
-        border: 1px solid #ddd;
-        border-radius: 4px;
+        //border: 1px solid #ddd;
+        border-radius: 10px;
         padding: 5px;
         max-width: 100%;//responsive 
         height: auto;//responsive
-        width: 500px;
-        float: right;
+        width: 600px;
         transform: rotate(-10deg);
+        margin-top: 50px;
     }
 }
 
