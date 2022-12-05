@@ -13,7 +13,7 @@ const Navigation = () => {
         <FontAwesomeIcon icon={faImages} />
       </NavLink>
       <NavLink to="/favorite">
-      <FontAwesomeIcon icon={faHeart} />
+        <FontAwesomeIcon icon={faHeart} />
       </NavLink>
     </nav>
   );

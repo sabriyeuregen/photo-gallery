@@ -1,19 +1,15 @@
-import  {useContext}  from "react"
-import FavoriteContext from "../../store/favorite-context"
+import { useContext } from "react";
+import FavoriteContext from "../../store/favorite-context";
+import FavoriteCard from "./FavoriteCard";
+import "./FavoritesList.scss";
 const FavoritesList = () => {
+  const { items } = useContext(FavoriteContext);
 
-    const {items} = useContext(FavoriteContext)
-     console.log(items)
-  return (
-    <div>
-       {items.map((item)=>(
-        <div>
-            <div>{item.image}</div>
-            <div>{item.price}</div>
-        </div>
-       ))}
-    </div>
-  )
-}
+  const itemsList = items.map((item) => (
+    <FavoriteCard image={item.image} title={item.title} />
+  ));
 
-export default FavoritesList
+  return <div className="itemslist">{itemsList}</div>;
+};
+
+export default FavoritesList;

@@ -18,7 +18,7 @@ export const FavoriteContextWrapper = (props) => {
     <FavoriteContext.Provider
       value={{
         items,
-        addToFavorite
+        addToFavorite,
       }}
     >
       {props.children}

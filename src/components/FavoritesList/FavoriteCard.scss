@@ -1,4 +1,4 @@
-.photo {
+.favoritecard {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   font-family: "Lato", Arial, sans-serif;
@@ -9,43 +9,27 @@
   position: relative;
   width: 100%;
 
-  .photo_image {
+  &__img {
     max-width: 100%;
     z-index: 1;
     position: relative;
   }
 
-  .photo__favorite-icon button {
-    position: absolute;
-    color: bisque;
-    font-size: 18px;
-    float: right;
-    border-radius: 70px;
-    border-color: #ffffff;
-    z-index: 2;
-    top: 8px;
-    right: 16px;
-
-    &:focus {
-      color: red;
-    }
-  }
-
-  .photo__title-box {
+  &__box {
     padding: 10px 10px 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
     z-index: 1;
 
-    .photo__title {
+    &-title {
       display: inline-block;
       font-weight: 700;
       letter-spacing: -0.4px;
       margin-bottom: 5px;
     }
 
-    .photo__title::before {
+    &-title::before {
       position: absolute;
       top: 0;
       bottom: 0;

@@ -5,21 +5,21 @@ import "./PhotosList.scss";
 const PhotosList = (props) => {
   const photos = props.result.map((image) => (
     <PhotoCard
-      key = {image.id}
-      title = {image.title}
-      image = {
+      key={image.id}
+      title={image.title}
+      image={
         <img
-          style = {{ objectFit: "contain" }}
-          width = "200"
-          alt = ""
-          height = "200"
-          src = {image.thumbnailUrl}
-          key = {image.id}
+          style={{ objectFit: "contain" }}
+          alt="photos"
+          width="300"
+          height="300"
+          src={image.thumbnailUrl}
+          key={image.id}
         />
       }
-      icon = {
+      icon={
         <button>
-         {/*<FontAwesomeIcon icon={faHeart} />*/}
+          <FontAwesomeIcon icon={faHeart} />
         </button>
       }
     />
