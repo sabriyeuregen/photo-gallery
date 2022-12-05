@@ -12,8 +12,8 @@ import Favorite from "./pages/Favorite/Favorite";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route path="/home" element={<Home />} />
+    <Route  element={<RootLayout />}>
+      <Route path="/" index element={<Home />} />
       <Route path="/photoalbum" element={<Albums />} />
       <Route path="/favorite" element={<Favorite />} />
     </Route>

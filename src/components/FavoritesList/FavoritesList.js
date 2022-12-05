@@ -9,7 +9,15 @@ const FavoritesList = () => {
     <FavoriteCard image={item.image} title={item.title} />
   ));
 
-  return <div className="itemslist">{itemsList}</div>;
+  return (
+    <div className="itemslist">
+      {items.length > 0 ? (
+        itemsList
+      ) : (
+        <div className="warning">Let's add favorite the photos!</div>
+      )}
+    </div>
+  );
 };
 
 export default FavoritesList;

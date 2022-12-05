@@ -6,7 +6,7 @@ import "./Navigation.scss";
 const Navigation = () => {
   return (
     <nav>
-      <NavLink to="/home">
+      <NavLink to="/">
         <FontAwesomeIcon icon={faHome} />
       </NavLink>
       <NavLink to="/photoalbum">
