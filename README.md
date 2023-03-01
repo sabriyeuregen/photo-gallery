@@ -16,7 +16,7 @@ Navigation bar için react-router-dom ile link verdim.Bu sayede home, favorite, 
 + SCSS
 
 ## Kullanılan API
-+ "https://jsonplaceholder.typicode.com/photos
++ https://jsonplaceholder.typicode.com/photos
 
 ## State Yönetimi
 + contextApi
