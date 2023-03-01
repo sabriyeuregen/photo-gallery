@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <div className="home">
       <img className="home__img" src={homeimage} alt="home"></img>
-      {/*<img className="home__img-two" src={homeimgtwo} alt="imgtwo"></img>*/}
       <h1>
         Favorite your photograph <FontAwesomeIcon icon={faHeart} />
       </h1>
