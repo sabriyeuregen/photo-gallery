@@ -1,1 +1,1 @@
-# https://photographgallery.netlify.app/
+# https://photogallery-react.netlify.app/
