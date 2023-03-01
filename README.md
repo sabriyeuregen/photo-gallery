@@ -12,7 +12,7 @@ Navigation bar için react-router-dom ile link verdim.Bu sayede home, favorite, 
 + React
 + React-router-dom v6.4
 
-## Sitil
+## Stil
 + SCSS
 
 ## Kullanılan API
